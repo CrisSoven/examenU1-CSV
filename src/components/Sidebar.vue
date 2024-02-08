@@ -1,14 +1,25 @@
 <template>
-  <b-navbar vertical class="pt-2">
-    <h1>Sidebar</h1>
-    <!-- <b-nav-item>
-      <b-link :to="{ name: 'inicio' }"> Juguetes </b-link>
-    </b-nav-item>
-    <b-nav-item>
-      <b-link :to="{ name: 'info' }"> Electrodomesticos </b-link>
-    </b-nav-item>
-    <b-nav-item>
-      <b-link :to="{ name: 'categories' }"> Para el hogar </b-link>
-    </b-nav-item> -->
-  </b-navbar>
+	<b-navbar vertical class="pt-2" type="light">
+		<b-row>
+			<b-navbar-brand href="#">Gestión de vehículos</b-navbar-brand>
+			<b-col>
+				<b-nav vertical>
+					<b-nav-item to="/inicio">Inicio</b-nav-item>
+					<b-nav-item to="/inicio/registrar"
+						>Registrar vehículo</b-nav-item
+					>
+					<b-nav-item to="/inicio/consultar"
+						>Consultar vehículos</b-nav-item
+					>
+				</b-nav>
+			</b-col>
+		</b-row>
+	</b-navbar>
 </template>
+
+<style scoped>
+.sidebar {
+	height: 100%;
+	position: fixed;
+}
+</style>
